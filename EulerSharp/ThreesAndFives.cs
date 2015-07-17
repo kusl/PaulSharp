@@ -19,7 +19,7 @@ namespace EulerSharp
             }
             return my_list;
         }
-        public static int sum_of_list(int number_to_multiple, int below_integer)
+        public static int sum_of_multiples(int number_to_multiple, int below_integer)
         {
             System.Collections.Generic.List<int> input_list = list_of_multiples_of_number_below_int(number_to_multiple, below_integer);
             var accumulator = 0;
@@ -31,7 +31,7 @@ namespace EulerSharp
         }
         public static int find_sum(int below_integer)
         {
-            return 0;
+            return sum_of_multiples(3, below_integer) + sum_of_multiples(5, below_integer);
         }
     }
 }
