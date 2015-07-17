@@ -55,6 +55,7 @@
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\AuthorArticle.cs" />
+    <Compile Include="Models\MyDate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Publisher.cs" />

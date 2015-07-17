@@ -15,8 +15,8 @@ namespace PaulSharp.Console
             {
                 Id = 1,
                 Location = "New York",
-                Title="Mother Earth, Mother Board",
-                Year = "2003"
+                Title = "Mother Earth, Mother Board",
+                Year = new MyDate(2003),
             };
             var author1= new Author()
             {

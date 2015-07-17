@@ -9,6 +9,6 @@
         public int Id { get; set; }
         public string Location { get; set; }
         public string Title { get; set; }
-        public string Year { get; set; }
+        public MyDate Year { get; set; }
     }
 }
