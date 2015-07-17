@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace EulerSharp.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class ThreesAndFivesTest
     {
         [TestMethod]
         public void TestMethod1()
