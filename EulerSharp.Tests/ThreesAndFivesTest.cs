@@ -9,7 +9,7 @@ namespace EulerSharp.Tests
         [TestMethod]
         public void Test_find_sum()
         {
-            var input = 13;
+            var input = 14;
             var output = EulerSharp.ThreesAndFives.find_sum(below_integer: input);
             Assert.AreEqual(output, 45);
         }
