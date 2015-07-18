@@ -7,23 +7,22 @@ namespace EulerSharp
 {
     public class ThreesAndFives
     {
-        private static System.Collections.Generic.List<int> list_of_multiples_of_number_below_int(int number_to_multiple, int below_integer)
+        private static System.Collections.Generic.HashSet<int> list_multiples_of_number_below_int(int number_to_multiple, int below_integer)
         {
-            var my_list = new System.Collections.Generic.List<int>();
+            var my_hashset = new System.Collections.Generic.HashSet<int>();
             for (int i = 0; i < below_integer; i++)
             {
                 if (i % number_to_multiple == 0)
                 {
-                    my_list.Add(i);
+                    my_hashset.Add(i);
                 }
             }
-            return my_list;
+            return my_hashset;
         }
-        public static int sum_of_multiples(int number_to_multiple, int below_integer)
+        private static int sum_of_set(System.Collections.Generic.HashSet<int> input_set)
         {
-            System.Collections.Generic.List<int> input_list = list_of_multiples_of_number_below_int(number_to_multiple, below_integer);
             var accumulator = 0;
-            foreach(int i in input_list)
+            foreach(int i in input_set)
             {
                 accumulator += i;
             }
@@ -31,7 +30,11 @@ namespace EulerSharp
         }
         public static int find_sum(int below_integer)
         {
-            return sum_of_multiples(3, below_integer) + sum_of_multiples(5, below_integer);
+            var threes = list_multiples_of_number_below_int(3, below_integer);
+            var fives = list_multiples_of_number_below_int(5, below_integer);
+            threes.UnionWith(fives);
+            return sum_of_set(threes);
+
         }
     }
 }
