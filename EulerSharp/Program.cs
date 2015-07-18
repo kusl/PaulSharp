@@ -10,7 +10,7 @@ namespace EulerSharp
     {
         static void Main(string[] args)
         {
-            int threes_and_fives = ThreesAndFives.find_sum(1000);
+            int threes_and_fives = ThreesAndFives.find_sum(13);
             Console.WriteLine(threes_and_fives);
             Console.Read();
         }
